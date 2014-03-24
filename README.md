@@ -3,6 +3,11 @@ python-crawler
 
 This is a small library intended for finding forms and submitting them with custom data. The primary use case would be for websites that don't have an API. `main.py` has example code for logging into `github.com` to get a list of your repositories. CSRF tokens are often required for forms and by using the `get_forms(url)` method it will automatically populate any anti-CSRF tokens to send with the request.
 
+### Setup
+
+    pip install beautifulsoup4
+    pip install lxml
+
 ### Example Usage
 
     crawler = Crawler()
